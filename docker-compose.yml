@@ -1,0 +1,27 @@
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: spotify-backend
+    volumes:
+      - ./backend/data:/app/data:ro
+      - ./backend/models:/app/models
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_DIR=/app/models
+      - DATA_CSV=/app/data/spotify_millsongdata.csv
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: spotify-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://host.docker.internal:8000
+    depends_on:
+      - backend
