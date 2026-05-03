@@ -28,3 +28,4 @@ Ensure you have Docker and Docker Compose installed.
 3. Build and start the containers:
    ```bash
    docker-compose up --build
+4. Access the frontend at http://localhost:5173 and the API documentation at http://localhost:8000/docs.
