@@ -2,6 +2,12 @@
 
 A complete, dockerized Machine Learning application that provides personalized music recommendations. It combines Collaborative Filtering (ALS) and Content-Based Filtering (TF-IDF) with a high-performance FastAPI backend and a React frontend.
 
+<img width="1630" height="982" alt="Знімок екрана 2026-09-21 180219" src="https://github.com/user-attachments/assets/74315f54-b16d-4087-9ebf-96b1b12c0c66" />
+
+<img width="1619" height="987" alt="Знімок екрана 2026-09-21 180248" src="https://github.com/user-attachments/assets/f40c7522-055d-4966-9777-8940cd7185ae" />
+
+<img width="364" height="510" alt="Знімок екрана 2026-09-21 180419" src="https://github.com/user-attachments/assets/f3ce116e-9895-4b9b-b006-b85937d6984c" />
+
 ## 🚀 Key Features
 * **Hybrid Recommendation Engine:** Uses Alternating Least Squares (ALS) for user-based collaborative filtering and TF-IDF with Cosine Similarity for content-based track matching.
 * **FastAPI Backend:** Provides fast, asynchronous RESTful endpoints for model inference in real-time.
